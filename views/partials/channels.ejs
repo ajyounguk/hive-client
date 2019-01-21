@@ -1,0 +1,16 @@
+<span>Hive Channels</span><hr><br>
+
+<% if ( typeof ui.data[2] == 'object' && ui.data[2] ) { %>
+
+    <form method="POST" action="/ui/channels">
+        <input type="submit" value="View Channels"><br><br>
+    </form>
+
+<% } else { %>
+    <span class="required">you must run the nodes function first</span><br><br><br>
+<% } %>
+
+<label>Response:</label>
+<textarea name="response" id ="response" readonly><%- JSON.stringify(ui.data[3],null,3) %></textarea>
+
+   

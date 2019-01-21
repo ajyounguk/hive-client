@@ -1,0 +1,24 @@
+{
+  "name": "hive-access",
+  "version": "1.0.0",
+  "description": "Node JS server, integrated with the Hive Thermostat API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajyounguk/hive-access.git"
+  },
+  "author": "Andrew Young",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajyounguk/hive-access/issues"
+  },
+  "homepage": "https://github.com/ajyounguk/hive-access#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.3"
+  }
+}

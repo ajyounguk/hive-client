@@ -1,0 +1,7 @@
+index.ejs   
+|-- navbar.ejs
+|-- hive.ejs
+    |-- partials/nodes.ejs
+    |-- partials/channels.ejs
+    |-- partials/history.ejs
+

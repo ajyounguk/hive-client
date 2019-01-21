@@ -1,0 +1,16 @@
+<label>Summary:</label>
+<textarea class="small" readonly>
+<% if (ui.data[1]) { %>
+Id: <%= ui.data[1].hivedata.users[0].id %>
+
+User: <%= ui.data[1].hivedata.users[0].username %>
+Email: <%= ui.data[1].hivedata.users[0].email %>
+
+Name: <%= ui.data[1].hivedata.users[0].firstName %> <%= ui.data[1].hivedata.users[0].lastName %>
+Address: <%= ui.data[1].hivedata.users[0].address %>
+<%= ui.data[1].hivedata.users[0].city %>
+<%= ui.data[1].hivedata.users[0].postcode %>
+
+Phone: <%= ui.data[1].hivedata.users[0].phone %>
+<% } %>
+</textarea><br><br>

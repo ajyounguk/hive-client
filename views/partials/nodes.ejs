@@ -1,0 +1,34 @@
+ <form method="POST" action="/ui/nodes">
+
+    <span>Hive Nodes</span><hr><br>
+    <input type="submit" value="View Nodes"><br><br>
+
+    <label>Summary:</label>
+
+    
+    <textarea class="small" readonly>
+    <% if (ui.data[2]) { %>
+        <% for (i=0; i < ui.data[2].hivedata.nodes.length; i++) { %>
+<%= i %>:
+Name:       <%= ui.data[2].hivedata.nodes[i].name %>
+Id:         <%= ui.data[2].hivedata.nodes[i].id %>
+Parent Id:  <%= ui.data[2].hivedata.nodes[i].parentNodeId %>
+Type:       <%= ui.data[2].hivedata.nodes[i].nodeType %>
+        <% } %>
+    <% } %>
+    
+    </textarea>
+
+    <br>
+    <label>Children:</label>
+    <textarea readonly>
+    <% if (ui.data[2]) { %>
+        <%= JSON.stringify(ui.nodes,null,3) %>
+    <% } %>
+    </textarea>
+
+    <label>Response:</label>
+    <textarea name="response" id ="response" readonly><%- JSON.stringify(ui.data[2],null,3) %></textarea>
+
+    <br><br>
+</form>
