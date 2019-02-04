@@ -352,17 +352,23 @@ module.exports = function (app) {
                                 // 6. did we find it in nodes?
                                 if (ui.nodes.node[nn].nodeID == id) {
 
+/* dirty fix - API no longer supports type
                                     var str = ui.nodes.node[nn].nodeType
                                     var start = str.indexOf('.class') + 7
                                     var cut = str.substr(start)
                                     var end = cut.indexOf('.')
                                     var type = cut.substr(0, end)
+*/
 
                                     // added to ui channels array
                                     ui.channels[el] = {
                                         id: id,
                                         name: ui.nodes.node[nn].nodeName,
+
+/* dirty fis - API no longer support type
                                         type: type,
+*/
+                                        type: "none",
                                         channel: channel
                                     }
                                 }
