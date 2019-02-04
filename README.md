@@ -61,4 +61,6 @@ node app.js
 ### Launch the app:
 point your browser at the local/remoteIP port 3000 (http://0.0.0.0:3000) to load the HTML app
 
+### CSV - if you use the .csv export function, files are stored in the /csv directory
+
 ### EOL Readme..
