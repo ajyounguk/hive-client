@@ -1,9 +1,7 @@
 
 # DO NOT USE - NO LONGER WORKING / SUPPORTED :(
-## Hive has abandoned / removed acccess for the public API 
-## that was used in this implementation rendering this project unusable.
-##
-## Code available for reference purposes only
+ Hive has abandoned / removed acccess for the public API that was used in this implementation rendering this project unusable. 
+ Code available for reference purposes only
 
 
 ## hive-access - a hive thermostat web app
